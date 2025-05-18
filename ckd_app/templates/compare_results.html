@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1 class="text-center">Comparison Results</h1>
+    <p><strong>Model 1:</strong> {{ model_1_name }}</p>
+    <p><strong>Model 2:</strong> {{ model_2_name }}</p>
+    <p><strong>Selected Metric:</strong> {{ metric }}</p>
+    <p><strong>{{ model_1_name }} {{ metric }}:</strong> {{ metric_1 }}</p>
+    <p><strong>{{ model_2_name }} {{ metric }}:</strong> {{ metric_2 }}</p>
+    <!-- <table class="table table-bordered mt-4">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Prediction (Model 1)</th>
+                <th>Prediction (Model 2)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in predictions_1 %}
+            <tr>
+                <td>{{ forloop.counter0 }}</td>
+                <td>{{ predictions_1|slice:forloop.counter0 }}</td>
+                <td>{{ predictions_2|slice:forloop.counter0 }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table> -->
+    <a href="{% url 'compare' %}" class="btn btn-primary mt-3">Compare Again</a>
+</div>
+{% endblock body %}

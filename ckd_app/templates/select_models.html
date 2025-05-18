@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1 class="text-center">Compare Models</h1>
+    <form method="post" class="mt-4">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.model_1.label_tag }}
+            {{ form.model_1 }}
+        </div>
+        <div class="form-group">
+            {{ form.model_2.label_tag }}
+            {{ form.model_2 }}
+        </div>
+        <div class="form-group">
+            {{ form.metric.label_tag }}
+            {{ form.metric }}
+        </div>
+        <button type="submit" class="btn btn-primary">Compare</button>
+    </form>
+</div>
+{% endblock body %}
+</body>
+
+</html>
