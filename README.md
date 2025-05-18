@@ -1,4 +1,4 @@
-# ckd_project
+# CKD Project
 
 This project is a Django web application for comparing different machine learning models on a Chronic Kidney Disease (CKD) dataset. The application allows users to select two models, compare their performance using various metrics, and visualize the results with bar charts, pie charts, confusion matrices, and classification reports.
 
@@ -32,3 +32,10 @@ This project is a Django web application for comparing different machine learnin
 
 ---
 
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/ShamimAhmed82245/ckd_project
+   cd ckd_project
+   ```
