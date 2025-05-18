@@ -32,10 +32,3 @@ This project is a Django web application for comparing different machine learnin
 
 ---
 
-### Installation
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/ShamimAhmed82245/ckd_project
-   cd ckd_project
-   ```
